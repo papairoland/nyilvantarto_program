@@ -33,9 +33,18 @@ namespace ConsoleApp2
             Console.Write("Fizetés: "); uj.Fizetes = int.Parse(Console.ReadLine());
             dolgozok.Add(uj);
             }
+
+            static void Listazas(){
+            Console.WriteLine("\n--- LISTA ---");
+            for (int i = 0; i < dolgozok.Count; i++){
+            Console.WriteLine($"{i + 1}. {dolgozok[i].Nev} [{dolgozok[i].Reszleg}] - {dolgozok[i].Fizetes} Ft");
+            }
+            Console.ReadKey();
+            }
         }
     }
 }
+
 
 
 
