@@ -24,9 +24,19 @@ namespace ConsoleApp2
             Console.Write("Válasszon: ");
             if (!int.TryParse(Console.ReadLine(), out valasztas)) continue;
             }
+
+            static void Felvetel(){
+            Console.WriteLine("\n--- ÚJ DOLGOZÓ ---");
+            Dolgozo uj = new Dolgozo();
+            Console.Write("Név: "); uj.Nev = Console.ReadLine();
+            Console.Write("Részleg: "); uj.Reszleg = Console.ReadLine();
+            Console.Write("Fizetés: "); uj.Fizetes = int.Parse(Console.ReadLine());
+            dolgozok.Add(uj);
+            }
         }
     }
 }
+
 
 
 
