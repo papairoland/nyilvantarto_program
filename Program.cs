@@ -12,10 +12,13 @@ namespace ConsoleApp2
 }
     internal class Program
     {
+        static List<Dolgozo> dolgozok = new List<Dolgozo>();
+        static string fajlnev = "adatok.txt";
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
         }
     }
 }
+
 
