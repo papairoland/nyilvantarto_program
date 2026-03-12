@@ -81,10 +81,19 @@ for (int i = 1; i < dolgozok.Count; i++)
             Console.Write("Részleg: ");
 string r = Console.ReadLine();
 int db = 0;
+            
 foreach(var d in dolgozok) if(d.Reszleg.ToLower() == r.ToLower()) db++;
+            static void Torles()
+{
+    Console.Write("\nTörlendő sorszáma: ");
+    int id = int.Parse(Console.ReadLine());
+    dolgozok.RemoveAt(id - 1);
+    Mentes();
+}
          }
     }
 }
+
 
 
 
