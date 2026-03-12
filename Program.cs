@@ -51,9 +51,18 @@ namespace ConsoleApp2
                     }
                 }
             }
+            static void Beolvasas(){
+                using (StreamReader sr = new StreamReader(fajlnev)){
+                    while (!sr.EndOfStream){
+                        string[] adatok = sr.ReadLine().Split(';');
+                        dolgozok.Add(new Dolgozo { Nev = adatok[0], Reszleg = adatok[1], Fizetes = int.Parse(adatok[2]) });
+                        }
+                    }
+                }
          }
     }
 }
+
 
 
 
