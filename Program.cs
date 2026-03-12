@@ -35,6 +35,7 @@ namespace ConsoleApp2
             }
 
             static void Listazas(){
+            if (dolgozok.Count == 0) Console.WriteLine("Üres az adatbázis.");
             Console.WriteLine("\n--- LISTA ---");
             for (int i = 0; i < dolgozok.Count; i++){
             Console.WriteLine($"{i + 1}. {dolgozok[i].Nev} [{dolgozok[i].Reszleg}] - {dolgozok[i].Fizetes} Ft");
@@ -44,6 +45,7 @@ namespace ConsoleApp2
         }
     }
 }
+
 
 
 
