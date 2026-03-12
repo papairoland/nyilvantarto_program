@@ -32,6 +32,8 @@ namespace ConsoleApp2
                 Console.Write("Részleg: "); uj.Reszleg = Console.ReadLine();
                 Console.Write("Fizetés: "); uj.Fizetes = int.Parse(Console.ReadLine());
                 dolgozok.Add(uj);
+                Mentes();
+                Console.WriteLine("Sikeresen mentve a fájlba!");
             }
 
             static void Listazas(){
@@ -52,6 +54,7 @@ namespace ConsoleApp2
          }
     }
 }
+
 
 
 
