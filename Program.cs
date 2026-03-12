@@ -69,9 +69,13 @@ namespace ConsoleApp2
     dolgozok.RemoveAt(id - 1);
     Mentes();
 }
+            double osszeg = 0;
+for (int i = 0; i < dolgozok.Count; i++) osszeg += dolgozok[i].Fizetes;
+Console.WriteLine($"Átlagfizetés: {osszeg / dolgozok.Count:0.00} Ft");
          }
     }
 }
+
 
 
 
