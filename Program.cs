@@ -11,7 +11,8 @@ namespace ConsoleApp2
     public int Fizetes { get; set; }
 }
     internal class Program
-    {
+    {    
+        Beolvasas();
         static List<Dolgozo> dolgozok = new List<Dolgozo>();
         static string fajlnev = "adatok.txt";
         static void Main(string[] args)
@@ -63,6 +64,7 @@ namespace ConsoleApp2
          }
     }
 }
+
 
 
 
