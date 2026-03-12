@@ -64,6 +64,7 @@ namespace ConsoleApp2
             static void Torles()
 {
     Console.Write("\nTörlendő sorszáma: ");
+                if (int.TryParse(Console.ReadLine(), out int id) && id > 0 && id <= dolgozok.Count)
     int id = int.Parse(Console.ReadLine());
     dolgozok.RemoveAt(id - 1);
     Mentes();
@@ -71,6 +72,7 @@ namespace ConsoleApp2
          }
     }
 }
+
 
 
 
