@@ -75,9 +75,13 @@ Console.WriteLine($"Átlagfizetés: {osszeg / dolgozok.Count:0.00} Ft");
             int maxI = 0;
 for (int i = 1; i < dolgozok.Count; i++)
     if (dolgozok[i].Fizetes > dolgozok[maxI].Fizetes) maxI = i;
+            int maxI = 0;
+for (int i = 1; i < dolgozok.Count; i++)
+    if (dolgozok[i].Fizetes < dolgozok[maxI].Fizetes) maxI = i;
          }
     }
 }
+
 
 
 
