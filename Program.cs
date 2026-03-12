@@ -78,9 +78,14 @@ for (int i = 1; i < dolgozok.Count; i++)
             int maxI = 0;
 for (int i = 1; i < dolgozok.Count; i++)
     if (dolgozok[i].Fizetes < dolgozok[maxI].Fizetes) maxI = i;
+            Console.Write("Részleg: ");
+string r = Console.ReadLine();
+int db = 0;
+foreach(var d in dolgozok) if(d.Reszleg.ToLower() == r.ToLower()) db++;
          }
     }
 }
+
 
 
 
