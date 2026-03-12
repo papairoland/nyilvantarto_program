@@ -61,9 +61,17 @@ namespace ConsoleApp2
                         }
                     }
                 }
+            static void Torles()
+{
+    Console.Write("\nTörlendő sorszáma: ");
+    int id = int.Parse(Console.ReadLine());
+    dolgozok.RemoveAt(id - 1);
+    Mentes();
+}
          }
     }
 }
+
 
 
 
