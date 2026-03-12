@@ -51,7 +51,8 @@ namespace ConsoleApp2
                     }
                 }
             }
-            static void Beolvasas(){
+            static void Beolvasas(){ 
+                if (File.Exists(fajlnev)) 
                 using (StreamReader sr = new StreamReader(fajlnev)){
                     while (!sr.EndOfStream){
                         string[] adatok = sr.ReadLine().Split(';');
@@ -62,6 +63,7 @@ namespace ConsoleApp2
          }
     }
 }
+
 
 
 
